@@ -45,7 +45,7 @@ class _WeatherPageState extends State<WeatherPage> {
       case 'haze':
       case 'dust':
       case 'fog':
-        return 'asstes/cloud.json';
+        return 'assets/cloud.json';
       case 'rain':
       case 'drizzle':
       case 'shower rain':
@@ -80,6 +80,7 @@ class _WeatherPageState extends State<WeatherPage> {
 
             // animation
             Lottie.asset(getWeatherAnimation(_weather?.mainCondition)),
+            //Lottie.asset('assets/rain.json'),
 
             // temperture
             Text('${_weather?.temperature.round()}°C'),
